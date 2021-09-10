@@ -18,7 +18,7 @@ async function sinkey() {
 sinkey()
 
 Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (message, match) => {
-        let regex1 = new RegExp('*: 💛 සිංහල :*')
+        let regex1 = new RegExp('*: 💛 Sinhala :*')
         let regex2 = new RegExp('*: 🤍 English :*')
         
         if (regex1.test(message.message)) {             
