@@ -6,8 +6,8 @@ const heroku = new Heroku({
     token: Config.HEROKU.API_KEY
 });
 let baseURI = '/apps/' + Config.HEROKU.APP_NAME;
-
-const ldc = "ssf"
+const varsx = "*: 💛 Sinhala :*"
+const varsy = "*: 🤍 English :*"
 
 var sin_var = ''
 async function sinkey() {
@@ -16,10 +16,10 @@ async function sinkey() {
     });
 }
 sinkey()
-
+const ldc = "sin text"
 Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (message, match) => {
-        let regex1 = new RegExp('*: 💛 Sinhala :*')
-        let regex2 = new RegExp('*: 🤍 English :*')
+        let regex1 = new RegExp(varsx)
+        let regex2 = new RegExp(varsy)
         
         if (regex1.test(message.message)) {             
             await message.client.sendMessage(message.jid,ldc, MessageType.text, {quoted: message.data })
