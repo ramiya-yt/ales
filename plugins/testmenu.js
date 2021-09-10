@@ -6,8 +6,8 @@ const heroku = new Heroku({
     token: Config.HEROKU.API_KEY
 });
 let baseURI = '/apps/' + Config.HEROKU.APP_NAME;
-const varsx = "*: 💛 Sinhala :*"
-const varsy = "*: 🤍 English :*"
+const varsx = "*Sinhala*"
+const varsy = "*English*"
 
 var sin_var = ''
 async function sinkey() {
