@@ -1,3 +1,4 @@
+/*
 const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const Config = require('../config');
@@ -17,3 +18,5 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
         else if (regex3.test(message.message)) {       
             await message.client.sendMessage(message.jid,ldc, MessageType.text, {quoted: message.data })
         }
+
+*/
